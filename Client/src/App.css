@@ -1,0 +1,81 @@
+#root {
+  /* max-width: 1280px; */
+  width:100%;
+  height:auto;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  /* background-color: lightgrey; */
+  background-color: rgb(96, 181, 252);
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Base font */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Headings */
+.h1 {
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: 600;
+}
+
+/* Paragraph */
+.text {
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.6;
+}
+
+/* Small text */
+.text-sm {
+  font-size: clamp(13px, 1.2vw, 17px);
+}
+
+/* Navbar */
+.nav-hover {
+  position: relative;
+  font-size: clamp(14px, 1.5vw, 20px);
+  font-weight: 500;
+}
+
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0d6efd; /* Bootstrap primary */
+  transition: width 0.3s ease;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}

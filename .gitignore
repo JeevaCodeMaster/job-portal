@@ -1,0 +1,69 @@
+# =========================
+# Node.js (Backend & Frontend)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories (for both client & server)
+client/node_modules/
+server/node_modules/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Build Files (React)
+# =========================
+client/build/
+client/dist/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# Testing
+# =========================
+coverage/
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Database (Local MongoDB dumps)
+# =========================
+dump/
+*.bson
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.swp
+*.swo
